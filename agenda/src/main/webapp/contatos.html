@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Agenda de contato</title>
+<link rel ="icon" href="imagens/favicon.png">
+<style>
+input{
+background-color:purple;
+color:white;
+border-radius: 20px;
+border: 0;
+cursor:pointer;
+text-align:center;
+}
+input:hover{
+background-color:#D695DF;
+}
+#email:hover{
+background-color:#D695DF;
+}
+body{
+height: 100vh;
+background-color:#A0BCD6;
+display:flex;
+flex-direction:column;
+align-items: center;
+margin: 0;
+padding: 0;
+margin-top: 110px;
+
+}
+main{
+align-items: center;
+display:flex;
+flex-direction:column;
+justify-content: center;
+background-color: #D8A0B4; 
+border-radius: 20px;
+}
+#telefone{
+width: 100px;
+margin-left: 35px;
+}
+#email{
+background-color:#86CDF6;
+}
+h1{
+color:#dedcff;
+}
+#teste{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+</style>
+</head>
+<body>
+<main>
+<img alt="agenda" src="imagens/agenda.png">
+<h1>Novo Contato</h1>
+	<form name="frmContato" action="insert">
+		<table>
+			<tr>
+				<td> <input type="text" name="nome" id="nome"  placeholder="Nome"/></td>
+			 </tr>
+			<tr>
+				<td> <input type="text" name="telefone" id="telefone" placeholder="Fone"/></td>
+			 </tr>
+			<tr>
+				<td> <input type="text" name="email" id="email" placeholder="Email"/></td>
+			</tr>
+			
+		</table>
+	<input type="submit"  id="teste" value="Adicionar" onclick = "return validar()">
+	</form>
+</main>
+<script type="text/javascript" src="scripts/validacao.js"></script>
+</body>
+</html>

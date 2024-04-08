@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>agenda</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>JavaBeans</display-name>
+    <servlet-name>JavaBeans</servlet-name>
+    <servlet-class>model.JavaBeans</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JavaBeans</servlet-name>
+    <url-pattern>/JavaBeans</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Javabeans</display-name>
+    <servlet-name>Javabeans</servlet-name>
+    <servlet-class>model.Javabeans</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Javabeans</servlet-name>
+    <url-pattern>/Javabeans</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>JavabEans</display-name>
+    <servlet-name>JavabEans</servlet-name>
+    <servlet-class>model.JavabEans</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JavabEans</servlet-name>
+    <url-pattern>/JavabEans</url-pattern>
+  </servlet-mapping>
+</web-app>
